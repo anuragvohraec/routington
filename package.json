@@ -26,10 +26,7 @@
   },
   "repository": "pillarjs/routington",
   "license": "MIT",
-  "main": "lib",
-  "files": [
-    "lib"
-  ],
+  "main": "index.js",
   "keywords": [
     "router",
     "routes",
