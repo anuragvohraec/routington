@@ -123,4 +123,42 @@ describe('Route matching', function () {
       router.match('/page/%%%')
     })
   })
+
+  it('should show route which matched too', function(){
+    const router = routington();
+
+    let t1 = router.define("/");
+    //console.log(t1);
+
+    let t2 = router.define("/name/:id");
+    //console.log(t2);
+
+    let t3 = router.define("/name/:id/create");
+    //console.log(t3);
+    {
+      let m1 = router.getMatchedPath("/name/anurag");
+      let {params, url_pattern} = m1;
+
+      assert(url_pattern === "/name/:id" )
+      url_pattern.should.eql("/name/:id")
+      params.id.should.eql("anurag")
+    }
+
+    {
+      let m1 = router.getMatchedPath("/name/anurag/create");
+      let {params, url_pattern} = m1;
+      url_pattern.should.eql("/name/:id/create")
+      params.id.should.eql("anurag")
+    }
+
+    {
+      let m1 = router.getMatchedPath("/blah/blah");
+      if(m1===undefined){
+        assert(true);
+      }else{
+        assert(false);
+      }
+    }
+    
+  })
 })

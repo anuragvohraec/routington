@@ -7,10 +7,10 @@
     "http-assert": "1"
   },
   "devDependencies": {
-    "mocha": "1",
-    "should": "4",
+    "istanbul": "0",
     "matcha": "0",
-    "istanbul": "0"
+    "mocha": "1",
+    "should": "^4.6.5"
   },
   "scripts": {
     "bench": "matcha benchmark",
