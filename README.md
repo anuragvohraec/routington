@@ -166,6 +166,17 @@ req.label = match.node.label
 
 IE9+
 
+
+### Added another method
+```js
+let t3 = router.define("/name/:id/create");
+var matchedPath = router.getMatchedPath("/name/anurag/create");
+/**
+ * matchedPath will be : {params: {id: anurag}, url_pattern: "/name/:id/create"}
+ **/
+```
+
+
 [npm-image]: https://img.shields.io/npm/v/routington.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/routington
 [github-tag]: http://img.shields.io/github/tag/pillarjs/routington.svg?style=flat-square
