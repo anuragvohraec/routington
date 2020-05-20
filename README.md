@@ -175,6 +175,9 @@ var matchedPath = router.getMatchedPath("/name/anurag/create");
  * matchedPath will be : {params: {id: anurag}, url_pattern: "/name/:id/create"}
  **/
 ```
+Simple add this to your typescript @types definition
+```declare module 'routington';```
+
 
 
 [npm-image]: https://img.shields.io/npm/v/routington.svg?style=flat-square

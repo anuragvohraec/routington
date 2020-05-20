@@ -24,7 +24,10 @@
     "url": "http://jongleberry.com",
     "twitter": "https://twitter.com/jongleberry"
   },
-  "repository": "pillarjs/routington",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anuragvohraec/routington.git"
+  },
   "license": "MIT",
   "main": "index.js",
   "keywords": [

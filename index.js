@@ -1,6 +1,6 @@
 
-module.exports = require('./lib/routington');
+const Routington = require('./lib/routington');
 
-require('./lib/define');
-require('./lib/match');
-require('./lib/parse');
+module.exports = Routington;
+
+
